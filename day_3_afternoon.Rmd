@@ -59,4 +59,10 @@ my_matrix
 
 
 
+pwd = print working directory
+*lets you know where you're working
 
+
+git add -A
+git commit -m "commit message"
+git push
