@@ -370,7 +370,24 @@ pre code {
 </div>
 
 
+<div id="make-some-vectors" class="section level2">
+<h2>make some vectors</h2>
+<pre class="r"><code>marmots &lt;- c(&quot;blue&quot;, &quot;green&quot;, 4, &quot;yellow&quot;)
+# can&#39;t have differing classes in a vector in R
 
+#Check class of object
+class(marmots)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>pika &lt;- c(12.4, 6.8, 2.9, 8.8, 8.5)
+class(pika)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r"><code>pika #does not show up in quotations this time</code></pre>
+<pre><code>## [1] 12.4  6.8  2.9  8.8  8.5</code></pre>
+<pre class="r"><code># scalar multiplier 
+scalar_pika &lt;- 5.2 * pika
+scalar_pika</code></pre>
+<pre><code>## [1] 64.48 35.36 15.08 45.76 44.20</code></pre>
+</div>
 
 
 

@@ -7,4 +7,42 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
 ```
+
+## make some vectors
+```{r}
+marmots <- c("blue", "green", 4, "yellow")
+# can't have differing classes in a vector in R
+
+#Check class of object
+class(marmots)
+```
+
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 8.5)
+class(pika)
+pika #does not show up in quotations this time
+
+# scalar multiplier 
+scalar_pika <- 5.2 * pika
+scalar_pika
+```
+
+
+```{r}
+bananas <- c(1, 2, 3)
+apples <- c(6, 7, 8)
+
+bananas + apples # vector addition!
+bananas - apples #vector subtraction!
+bananas %*% apples # dot product!!
+
+fruit <- data.frame(bananas, apples) # create dataframe 
+```
+
+
+
+
+
