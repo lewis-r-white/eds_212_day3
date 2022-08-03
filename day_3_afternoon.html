@@ -387,6 +387,32 @@ class(pika)</code></pre>
 scalar_pika &lt;- 5.2 * pika
 scalar_pika</code></pre>
 <pre><code>## [1] 64.48 35.36 15.08 45.76 44.20</code></pre>
+<pre class="r"><code>bananas &lt;- c(1, 2, 3)
+apples &lt;- c(6, 7, 8)
+
+bananas + apples # vector addition!</code></pre>
+<pre><code>## [1]  7  9 11</code></pre>
+<pre class="r"><code>bananas - apples #vector subtraction!</code></pre>
+<pre><code>## [1] -5 -5 -5</code></pre>
+<pre class="r"><code>bananas %*% apples # dot product!!</code></pre>
+<pre><code>##      [,1]
+## [1,]   44</code></pre>
+<pre class="r"><code>fruit &lt;- data.frame(bananas, apples) # create data frame </code></pre>
+</div>
+<div id="matrices" class="section level2">
+<h2>Matrices</h2>
+<pre class="r"><code>my_values &lt;- seq(from = 1, to = 10, length = 10)
+
+my_matrix &lt;- matrix(data = my_values, nrow = 2, ncol = 5, byrow = TRUE)
+my_matrix</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    2    3    4    5
+## [2,]    6    7    8    9   10</code></pre>
+<pre class="r"><code>5 * my_matrix</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    5   10   15   20   25
+## [2,]   30   35   40   45   50</code></pre>
+<pre class="r"><code>#glimpse shows preview of values in row as well as class of each variable. </code></pre>
 </div>
 
 
